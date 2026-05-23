@@ -5,26 +5,291 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: lightgray;
+            color: black;
+        }
+
+        nav{
+            background-color: navy;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .contenedor{
+            width: 80%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+       
+        .encabezado{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .datos-principales{
+            width: 75%;
+        }
+
+        .datos-principales h1{
+            color: navy;
+            margin-bottom: 10px;
+        }
+
+       
+    
+
+        section{
+            margin-bottom: 30px;
+        }
+
+        h2{
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border: 1px solid gray;
+        }
+
+        th{
+            background-color: lightblue;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        ul{
+            margin-left: 20px;
+        }
+
+        .redes a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-    <h1>Hoja de Vida</h1>
+    <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#informacion">Información</a>
+        <a href="#formacion">Formación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-    <div>
-        <p><strong>Nombre:</strong> Lauri Yuliany Gamboa Carreño</p>
-        <p><strong>Institución:</strong> Institución Educativa José Eusebio Caro</p>
-        <p><strong>Año de egreso:</strong> 2024</p>
-    </div>
-    <div>
-        <p><strong>Descripción:</strong></p>
-        <p>Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la Universidad Francisco De Paula Santander, Ocumare de la Costa.</p>
-        <p>Me considero una persona proactiva, con una gran capacidad de aprendizaje y adaptabilidad. Mi objetivo es ser un profesional competente y comprometido con la tecnología.</p>
-        <p>A lo largo de mi vida académica, he demostrado ser una estudiante responsable y disciplinada. Además, me encanta aprender nuevas tecnologías y desarrollarme en proyectos de programación.</p>
+    <div class="contenedor">
+
+        <div class="encabezado">
+
+            <div class="datos-principales">
+
+                <h1>HOJA DE VIDA</h1>
+
+                <p><strong>Nombre:</strong> Lauri Yuliany Gamboa Carreño</p>
+
+                <br>
+
+                <p>
+                    Estudiante de Ingeniería de Sistemas con interés en la 
+                    tecnología, programación y aprendizaje continuo.
+                </p>
+
+            </div>
+
+            
+         
+
+        </div>
+
+        
+        <section id="perfil">
+
+            <h2>Perfil Profesional</h2>
+
+            <p>
+                Soy estudiante de <strong>Ingeniería de Sistemas</strong> en la 
+                Universidad Francisco De Paula Santander.
+            </p>
+
+            <br>
+
+            <p>
+                Me considero una persona responsable, organizada y con gran 
+                capacidad de aprendizaje. Me gusta trabajar en equipo y adquirir 
+                nuevos conocimientos relacionados con la programación y la tecnología.
+            </p>
+
+            <br>
+
+            <p>
+                Mi objetivo es formarme como una profesional competente y comprometida 
+                con el desarrollo tecnológico.
+            </p>
+
+        </section>
+
+        
+        <section id="informacion">
+
+            <h2>Información Personal</h2>
+
+            <table>
+
+                <tr>
+                    <th>Nombre completo</th>
+                    <td>Lauri Yuliany Gamboa Carreño</td>
+                </tr>
+
+                <tr>
+                    <th>Institución Educativa</th>
+                    <td>Institución Educativa José Eusebio Caro</td>
+                </tr>
+
+                <tr>
+                    <th>Año de egreso</th>
+                    <td>2024</td>
+                </tr>
+
+                <tr>
+                    <th>Carrera</th>
+                    <td>Ingeniería de Sistemas</td>
+                </tr>
+
+                <tr>
+                    <th>Universidad</th>
+                    <td>Universidad Francisco De Paula Santander</td>
+                </tr>
+
+            </table>
+
+        </section>
+        
+                <section id="formacion">
+
+            <h2>Formación Académica</h2>
+
+            <table>
+
+                <tr>
+                    <th>Nivel</th>
+                    <th>Institución</th>
+                    <th>Estado</th>
+                </tr>
+
+                <tr>
+                    <td>Bachiller Académico</td>
+                    <td>Institución Educativa José Eusebio Caro</td>
+                    <td>Finalizado</td>
+                </tr>
+
+                <tr>
+                    <td>Ingeniería de Sistemas</td>
+                    <td>Universidad Francisco De Paula Santander</td>
+                    <td>En formación</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        
+        <section id="habilidades">
+
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>Responsabilidad</li>
+                <li>Trabajo en equipo</li>
+                <li>Capacidad de aprendizaje</li>
+                <li>Adaptabilidad</li>
+                <li>Manejo básico de HTML</li>
+                <li>Interés por la programación</li>
+            </ul>
+
+        </section>
+
+        
+        <section id="contacto">
+
+            <h2>Contacto y Redes Sociales</h2>
+
+            <table>
+
+                <tr>
+                    <th>Correo electrónico</th>
+                    <td>lygamboac@ufpso.edu.co</td>
+                </tr>
+
+                <tr>
+                    <th>Teléfono</th>
+                    <td>313 466 3641</td>
+                </tr>
+
+                <tr>
+                    <th>Instagram</th>
+                    <td class="redes">
+                        <a href="https://www.instagram.com/yulia_ny.gc" target="_blank">
+                            @yulia_ny.gc
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+
+        </section>
+
     </div>
 
-    <div>
-        <p><strong>Red social:</strong> <a href="https://www.instagram.com/yulia_ny.gc" target="_blank">Instagram de Lauri</a></p>
-    </div>
+    <footer>
+        <p>Hoja de Vida - Lauri Yuliany Gamboa Carreño</p>
+    </footer>
 
 </body>
 </html>
